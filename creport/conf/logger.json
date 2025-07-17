@@ -1,0 +1,19 @@
+{
+    "enablefile": true,
+    "filename": "",
+    "maxsize": 256,
+    "maxage": 30,
+    "maxbackups": 10,
+    "localtime": true,
+    "compress": true,
+    "enableconsole": true,
+    "enablecaller": true,
+    "enablesourceip": true,
+    "enablepid": true,
+    "filelevel": "info",
+    "consolelevel": "debug",
+    "fileencoding": "json",
+    "consoleencoding": "console",
+    "appname": "migu.vrviu.com",
+    "sourceeth": "eno1"
+}

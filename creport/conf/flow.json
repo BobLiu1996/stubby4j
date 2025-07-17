@@ -1,0 +1,7 @@
+{
+    "filename": "./report",
+    "maxsize": 256,
+    "maxage": 30,
+    "maxbackups": 10,
+    "compress": true
+}
