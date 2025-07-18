@@ -1,8 +1,8 @@
-2025-07-17T03:59:43,085+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [GET] /v1/instance/info [GetInstanceInfo]
-2025-07-17T03:59:46,242+00:00 DEBUG i.g.a.s.f.MainYamlScanner Main YAML scan enabled, watching /home/stubby4j/data/stub.yaml.
-2025-07-17T03:59:46,258+00:00 DEBUG i.g.a.s.f.ExternalFilesScanner External file scan enabled, watching external files referenced from /home/stubby4j/data/stub.yaml.
-2025-07-17T03:59:46,340+00:00 DEBUG i.g.a.s.Main stubby4j successfully started after 6886 milliseconds.
-2025-07-17T03:59:46,341+00:00 DEBUG i.g.a.s.Main Admin portal:
+2025-07-18T03:37:12,878+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [GET] /v1/instance/info [GetInstanceInfo]
+2025-07-18T03:37:15,964+00:00 DEBUG i.g.a.s.f.MainYamlScanner Main YAML scan enabled, watching /home/stubby4j/data/stub.yaml.
+2025-07-18T03:37:15,974+00:00 DEBUG i.g.a.s.f.ExternalFilesScanner External file scan enabled, watching external files referenced from /home/stubby4j/data/stub.yaml.
+2025-07-18T03:37:16,042+00:00 DEBUG i.g.a.s.Main stubby4j successfully started after 7066 milliseconds.
+2025-07-18T03:37:16,043+00:00 DEBUG i.g.a.s.Main Admin portal:
 --------------------------------------------------------------------------------------------------------
  > http://0.0.0.0:8891		Admin portal
  > http://0.0.0.0:8891/status		Admin portal status
@@ -25,200 +25,82 @@ Available secure endpoints:
 --------------------------------------------------------------------------------------------------------
  > https://0.0.0.0:7445		HTTP/2 over TLS (h2) stubs portal
 
-2025-07-17T03:59:46,345+00:00 INFO i.g.a.s.Main Quit: ctrl-c
-2025-07-17T04:02:45,590+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [GET] /v1/instance/info [GetInstanceInfo]
-2025-07-17T04:02:48,715+00:00 DEBUG i.g.a.s.f.MainYamlScanner Main YAML scan enabled, watching /home/stubby4j/data/stub.yaml.
-2025-07-17T04:02:48,727+00:00 DEBUG i.g.a.s.f.ExternalFilesScanner External file scan enabled, watching external files referenced from /home/stubby4j/data/stub.yaml.
-2025-07-17T04:02:48,849+00:00 DEBUG i.g.a.s.Main stubby4j successfully started after 7515 milliseconds.
-2025-07-17T04:02:48,851+00:00 DEBUG i.g.a.s.Main Admin portal:
---------------------------------------------------------------------------------------------------------
- > http://0.0.0.0:8891		Admin portal
- > http://0.0.0.0:8891/status		Admin portal status
-
-
-Available insecure endpoints:
---------------------------------------------------------------------------------------------------------
- > http://0.0.0.0:8000		HTTP/1.1 stubs portal
- > http://0.0.0.0:8000		HTTP/2 over TCP (h2c) stubs portal
- > ws://0.0.0.0:8000/ws		HTTP/1.1 WebSockets stubs portal
-
-
-TLS layer configuration:
---------------------------------------------------------------------------------------------------------
- > Supported TLS protocol versions: [TLSv1.3, TLSv1.2] with ALPN extension on HTTP/2
- > TLS layer configured using internal self-signed certificate
-
-
-Available secure endpoints:
---------------------------------------------------------------------------------------------------------
- > https://0.0.0.0:7445		HTTP/2 over TLS (h2) stubs portal
-
-2025-07-17T04:02:48,855+00:00 INFO i.g.a.s.Main Quit: ctrl-c
-2025-07-17T04:06:09,180+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:06:09] => HTTP GET on [/v1/instance/info]
-2025-07-17T04:06:09,196+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:06:09,199+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
+2025-07-18T03:37:16,047+00:00 INFO i.g.a.s.Main Quit: ctrl-c
+2025-07-18T03:37:48,384+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-18 03:37:48] => HTTP GET on [/]
+2025-07-18T03:37:48,395+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-18T03:37:48,398+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
    METHOD: GET
    CONTEXT PATH: 
    SERVLET PATH: 
    AUTH TYPE: null
    REMOTE USER: null
-   REQUEST URI: /v1/instance/info
-   REQUEST URL: http://127.0.0.1:8000/v1/instance/info
+   REQUEST URI: /
+   REQUEST URL: http://127.0.0.1:8000/
    QUERY STRING: null
-   PATH INFO: /v1/instance/info
+   PATH INFO: /
    PATH TRANSLATED: null
    HEADERS: {
-   'Accept': application/json,
-   'User-Agent': go-resty/2.10.0 (https://github.com/go-resty/resty),
+   'User-Agent': Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.19041.5247,
+   'Connection': keep-alive,
    'Host': 127.0.0.1:8000,
-   'Accept-Encoding': gzip,
 }
-2025-07-17T04:06:09,201+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:06:09,231+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:06:09,232+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/v1/instance/info, method=[GET], query={}, headers={accept=application/json, user-agent=go-resty/2.10.0 (https://github.com/go-resty/resty), host=127.0.0.1:8000, accept-encoding=gzip}}
-2025-07-17T04:06:09,233+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:06:09,318+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/v1/instance/info] WITH incoming [/v1/instance/info]
-2025-07-17T04:06:09,320+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[GET]] WITH incoming [[GET]]
-2025-07-17T04:06:09,321+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 86 milliseconds Description [GetInstanceInfo]
-2025-07-17T04:06:09,410+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:06:09] <= 200 OK
+2025-07-18T03:37:48,399+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-18T03:37:48,413+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-18T03:37:48,415+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/, method=[GET], query={}, headers={user-agent=Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.19041.5247, connection=keep-alive, host=127.0.0.1:8000}}
+2025-07-18T03:37:48,415+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-18T03:37:48,512+00:00 ERROR i.g.a.s.s.StubMatcher Failed to match on stubbed URL [/v1/instance/info] WITH incoming [/]
+2025-07-18T03:37:48,541+00:00 ERROR i.g.a.s.u.HandlerUtils {"reason":"(404) Nothing found for GET request at URI \/","headers":{"host":"127.0.0.1:8000","connection":"keep-alive","user-agent":"Mozilla\/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell\/5.1.19041.5247"},"method":"GET","url":"\/"}
+2025-07-18T03:37:48,543+00:00 ERROR i.g.a.s.u.ConsoleUtils [2025-07-18 03:37:48] <= 404 Not Found
 
-2025-07-17T04:17:18,423+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:17:18] => HTTP GET on [/v1/instance/info]
-2025-07-17T04:17:18,429+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:17:18,431+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
+2025-07-18T03:38:05,090+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-18 03:38:05] => HTTP GET on [/]
+2025-07-18T03:38:05,093+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:05,094+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
    METHOD: GET
    CONTEXT PATH: 
    SERVLET PATH: 
    AUTH TYPE: null
    REMOTE USER: null
-   REQUEST URI: /v1/instance/info
-   REQUEST URL: http://127.0.0.1:8000/v1/instance/info
+   REQUEST URI: /
+   REQUEST URL: http://10.86.32.67:8000/
    QUERY STRING: null
-   PATH INFO: /v1/instance/info
+   PATH INFO: /
    PATH TRANSLATED: null
    HEADERS: {
-   'Accept': application/json,
-   'User-Agent': go-resty/2.10.0 (https://github.com/go-resty/resty),
-   'Host': 127.0.0.1:8000,
-   'Accept-Encoding': gzip,
+   'User-Agent': Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.19041.5247,
+   'Connection': keep-alive,
+   'Host': 10.86.32.67:8000,
 }
-2025-07-17T04:17:18,433+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:17:18,435+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:17:18,437+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/v1/instance/info, method=[GET], query={}, headers={accept=application/json, user-agent=go-resty/2.10.0 (https://github.com/go-resty/resty), host=127.0.0.1:8000, accept-encoding=gzip}}
-2025-07-17T04:17:18,438+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:17:18,440+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/v1/instance/info] WITH incoming [/v1/instance/info]
-2025-07-17T04:17:18,446+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[GET]] WITH incoming [[GET]]
-2025-07-17T04:17:18,448+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 9 milliseconds Description [GetInstanceInfo]
-2025-07-17T04:17:18,468+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:17:18] <= 200 OK
+2025-07-18T03:38:05,097+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:05,098+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:05,099+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/, method=[GET], query={}, headers={user-agent=Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.19041.5247, connection=keep-alive, host=10.86.32.67:8000}}
+2025-07-18T03:38:05,100+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:05,103+00:00 ERROR i.g.a.s.s.StubMatcher Failed to match on stubbed URL [/v1/instance/info] WITH incoming [/]
+2025-07-18T03:38:05,105+00:00 ERROR i.g.a.s.u.HandlerUtils {"reason":"(404) Nothing found for GET request at URI \/","headers":{"host":"10.86.32.67:8000","connection":"keep-alive","user-agent":"Mozilla\/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell\/5.1.19041.5247"},"method":"GET","url":"\/"}
+2025-07-18T03:38:05,107+00:00 ERROR i.g.a.s.u.ConsoleUtils [2025-07-18 03:38:05] <= 404 Not Found
 
-2025-07-17T04:19:21,575+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:19:21] => HTTP GET on [/v1/instance/info]
-2025-07-17T04:19:21,577+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:19:21,578+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
+2025-07-18T03:38:21,601+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-18 03:38:21] => HTTP GET on [/]
+2025-07-18T03:38:21,605+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:21,606+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
    METHOD: GET
    CONTEXT PATH: 
    SERVLET PATH: 
    AUTH TYPE: null
    REMOTE USER: null
-   REQUEST URI: /v1/instance/info
-   REQUEST URL: http://127.0.0.1:8000/v1/instance/info
+   REQUEST URI: /
+   REQUEST URL: http://10.86.32.67:8000/
    QUERY STRING: null
-   PATH INFO: /v1/instance/info
+   PATH INFO: /
    PATH TRANSLATED: null
    HEADERS: {
-   'Accept': application/json,
-   'User-Agent': go-resty/2.10.0 (https://github.com/go-resty/resty),
-   'Host': 127.0.0.1:8000,
-   'Accept-Encoding': gzip,
+   'Accept': */*,
+   'User-Agent': curl/7.81.0,
+   'Host': 10.86.32.67:8000,
 }
-2025-07-17T04:19:21,579+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:19:21,580+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:19:21,581+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/v1/instance/info, method=[GET], query={}, headers={accept=application/json, user-agent=go-resty/2.10.0 (https://github.com/go-resty/resty), host=127.0.0.1:8000, accept-encoding=gzip}}
-2025-07-17T04:19:21,582+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:19:21,584+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/v1/instance/info] WITH incoming [/v1/instance/info]
-2025-07-17T04:19:21,585+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[GET]] WITH incoming [[GET]]
-2025-07-17T04:19:21,586+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 3 milliseconds Description [GetInstanceInfo]
-2025-07-17T04:19:21,596+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:19:21] <= 200 OK
-
-2025-07-17T04:20:50,955+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:20:50] => HTTP GET on [/v1/instance/info]
-2025-07-17T04:20:50,958+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:20:50,960+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
-   METHOD: GET
-   CONTEXT PATH: 
-   SERVLET PATH: 
-   AUTH TYPE: null
-   REMOTE USER: null
-   REQUEST URI: /v1/instance/info
-   REQUEST URL: http://127.0.0.1:8000/v1/instance/info
-   QUERY STRING: null
-   PATH INFO: /v1/instance/info
-   PATH TRANSLATED: null
-   HEADERS: {
-   'Accept': application/json,
-   'User-Agent': go-resty/2.10.0 (https://github.com/go-resty/resty),
-   'Host': 127.0.0.1:8000,
-   'Accept-Encoding': gzip,
-}
-2025-07-17T04:20:50,961+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:20:50,962+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:20:50,963+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/v1/instance/info, method=[GET], query={}, headers={accept=application/json, user-agent=go-resty/2.10.0 (https://github.com/go-resty/resty), host=127.0.0.1:8000, accept-encoding=gzip}}
-2025-07-17T04:20:50,964+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:20:50,966+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/v1/instance/info] WITH incoming [/v1/instance/info]
-2025-07-17T04:20:50,968+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[GET]] WITH incoming [[GET]]
-2025-07-17T04:20:50,969+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 4 milliseconds Description [GetInstanceInfo]
-2025-07-17T04:20:50,981+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:20:50] <= 200 OK
-
-2025-07-17T04:26:53,919+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:26:53] => HTTP GET on [/v1/instance/info]
-2025-07-17T04:26:53,921+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:26:53,922+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
-   METHOD: GET
-   CONTEXT PATH: 
-   SERVLET PATH: 
-   AUTH TYPE: null
-   REMOTE USER: null
-   REQUEST URI: /v1/instance/info
-   REQUEST URL: http://127.0.0.1:8000/v1/instance/info
-   QUERY STRING: null
-   PATH INFO: /v1/instance/info
-   PATH TRANSLATED: null
-   HEADERS: {
-   'Accept': application/json,
-   'User-Agent': go-resty/2.10.0 (https://github.com/go-resty/resty),
-   'Host': 127.0.0.1:8000,
-   'Accept-Encoding': gzip,
-}
-2025-07-17T04:26:53,924+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T04:26:53,926+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:26:53,927+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/v1/instance/info, method=[GET], query={}, headers={accept=application/json, user-agent=go-resty/2.10.0 (https://github.com/go-resty/resty), host=127.0.0.1:8000, accept-encoding=gzip}}
-2025-07-17T04:26:53,928+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T04:26:53,930+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/v1/instance/info] WITH incoming [/v1/instance/info]
-2025-07-17T04:26:53,931+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[GET]] WITH incoming [[GET]]
-2025-07-17T04:26:53,931+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 2 milliseconds Description [GetInstanceInfo]
-2025-07-17T04:26:53,945+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 04:26:53] <= 200 OK
-
-2025-07-17T08:01:24,543+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 08:01:24] => HTTP GET on [/v1/instance/info]
-2025-07-17T08:01:24,590+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T08:01:24,592+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
-   METHOD: GET
-   CONTEXT PATH: 
-   SERVLET PATH: 
-   AUTH TYPE: null
-   REMOTE USER: null
-   REQUEST URI: /v1/instance/info
-   REQUEST URL: http://127.0.0.1:8000/v1/instance/info
-   QUERY STRING: null
-   PATH INFO: /v1/instance/info
-   PATH TRANSLATED: null
-   HEADERS: {
-   'Accept': application/json,
-   'User-Agent': go-resty/2.10.0 (https://github.com/go-resty/resty),
-   'Host': 127.0.0.1:8000,
-   'Accept-Encoding': gzip,
-}
-2025-07-17T08:01:24,595+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
-2025-07-17T08:01:24,614+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T08:01:24,615+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/v1/instance/info, method=[GET], query={}, headers={accept=application/json, user-agent=go-resty/2.10.0 (https://github.com/go-resty/resty), host=127.0.0.1:8000, accept-encoding=gzip}}
-2025-07-17T08:01:24,616+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
-2025-07-17T08:01:24,886+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/v1/instance/info] WITH incoming [/v1/instance/info]
-2025-07-17T08:01:24,897+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[GET]] WITH incoming [[GET]]
-2025-07-17T08:01:24,898+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 281 milliseconds Description [GetInstanceInfo]
-2025-07-17T08:01:24,959+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-17 08:01:24] <= 200 OK
+2025-07-18T03:38:21,607+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:21,608+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:21,609+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/, method=[GET], query={}, headers={accept=*/*, user-agent=curl/7.81.0, host=10.86.32.67:8000}}
+2025-07-18T03:38:21,610+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-18T03:38:21,613+00:00 ERROR i.g.a.s.s.StubMatcher Failed to match on stubbed URL [/v1/instance/info] WITH incoming [/]
+2025-07-18T03:38:21,616+00:00 ERROR i.g.a.s.u.HandlerUtils {"reason":"(404) Nothing found for GET request at URI \/","headers":{"host":"10.86.32.67:8000","accept":"*\/*","user-agent":"curl\/7.81.0"},"method":"GET","url":"\/"}
+2025-07-18T03:38:21,617+00:00 ERROR i.g.a.s.u.ConsoleUtils [2025-07-18 03:38:21] <= 404 Not Found
 
