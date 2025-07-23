@@ -1,9 +1,9 @@
-2025-07-18T03:37:13,243+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/startGame [startGame]
-2025-07-18T03:37:13,376+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/endGame [stopGame]
-2025-07-18T03:37:16,397+00:00 DEBUG i.g.a.s.f.MainYamlScanner Main YAML scan enabled, watching /home/stubby4j/data/stub.yaml.
-2025-07-18T03:37:16,407+00:00 DEBUG i.g.a.s.f.ExternalFilesScanner External file scan enabled, watching external files referenced from /home/stubby4j/data/stub.yaml.
-2025-07-18T03:37:16,506+00:00 DEBUG i.g.a.s.Main stubby4j successfully started after 7627 milliseconds.
-2025-07-18T03:37:16,507+00:00 DEBUG i.g.a.s.Main Admin portal:
+2025-07-23T03:54:15,114+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/startGame [startGame]
+2025-07-23T03:54:15,263+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/endGame [stopGame]
+2025-07-23T03:54:19,216+00:00 DEBUG i.g.a.s.f.MainYamlScanner Main YAML scan enabled, watching /home/stubby4j/data/stub.yaml.
+2025-07-23T03:54:19,246+00:00 DEBUG i.g.a.s.f.ExternalFilesScanner External file scan enabled, watching external files referenced from /home/stubby4j/data/stub.yaml.
+2025-07-23T03:54:19,436+00:00 DEBUG i.g.a.s.Main stubby4j successfully started after 9146 milliseconds.
+2025-07-23T03:54:19,438+00:00 DEBUG i.g.a.s.Main Admin portal:
 --------------------------------------------------------------------------------------------------------
  > http://0.0.0.0:8889		Admin portal
  > http://0.0.0.0:8889/status		Admin portal status
@@ -26,4 +26,270 @@ Available secure endpoints:
 --------------------------------------------------------------------------------------------------------
  > https://0.0.0.0:7443		HTTP/2 over TLS (h2) stubs portal
 
-2025-07-18T03:37:16,512+00:00 INFO i.g.a.s.Main Quit: ctrl-c
+2025-07-23T03:54:19,445+00:00 INFO i.g.a.s.Main Quit: ctrl-c
+2025-07-23T03:54:49,342+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 03:54:49] => HTTP POST on [/gsm/startGame]
+2025-07-23T03:54:49,356+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T03:54:49,363+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
+   METHOD: POST
+   CONTEXT PATH: 
+   SERVLET PATH: 
+   AUTH TYPE: null
+   REMOTE USER: null
+   REQUEST URI: /gsm/startGame
+   REQUEST URL: http://127.0.0.1:52001/gsm/startGame
+   QUERY STRING: null
+   PATH INFO: /gsm/startGame
+   PATH TRANSLATED: null
+   HEADERS: {
+   'Authorization': Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU,
+   'Accept': */*,
+   'User-Agent': Apifox/1.0.0 (https://apifox.com),
+   'X-Forwarded-For': 127.0.0.1,
+   'Host': 127.0.0.1:52001,
+   'Accept-Encoding': gzip, deflate, br,
+   'Content-Length': 398,
+   'Content-Type': application/json,
+}
+2025-07-23T03:54:49,365+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T03:54:49,434+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T03:54:49,435+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/gsm/startGame, method=[POST], post={
+  "start": 1719820800,
+  "flow_id": "flow123",
+  "biz": 10,
+  "gid": 10,
+  "uuid": 10,
+  "vmid": 43,
+  "area_type": 4103,
+  "idc": "cn-east-jinhua-3001",
+  "stream_ip": "127.0.0.1",
+  "stream_ports": [
+    {
+      "name": "main",
+      "protocol_type": "tcp",
+      "stream_port": 50637
+    }
+  ],
+  "extra": "test extra info",
+  "image_version": 2,
+  "runtime_info": "{\"run_game_tag\":12345}"
+}, query={}, headers={authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU, accept=*/*, user-agent=Apifox/1.0.0 (https://apifox.com), x-forwarded-for=127.0.0.1, host=127.0.0.1:52001, accept-encoding=gzip, deflate, br, content-length=398, content-type=application/json}}
+2025-07-23T03:54:49,437+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T03:54:49,503+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/gsm/startGame] WITH incoming [/gsm/startGame]
+2025-07-23T03:54:49,505+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[POST]] WITH incoming [[POST]]
+2025-07-23T03:54:49,506+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 67 milliseconds Description [startGame]
+2025-07-23T03:54:49,538+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 03:54:49] <= 200 OK
+
+2025-07-23T04:01:54,604+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 04:01:54] => HTTP POST on [/gsm/startGame]
+2025-07-23T04:01:54,606+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T04:01:54,607+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
+   METHOD: POST
+   CONTEXT PATH: 
+   SERVLET PATH: 
+   AUTH TYPE: null
+   REMOTE USER: null
+   REQUEST URI: /gsm/startGame
+   REQUEST URL: http://127.0.0.1:52001/gsm/startGame
+   QUERY STRING: null
+   PATH INFO: /gsm/startGame
+   PATH TRANSLATED: null
+   HEADERS: {
+   'Authorization': Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU,
+   'Accept': */*,
+   'User-Agent': Apifox/1.0.0 (https://apifox.com),
+   'X-Forwarded-For': 127.0.0.1,
+   'Host': 127.0.0.1:52001,
+   'Accept-Encoding': gzip, deflate, br,
+   'Content-Length': 398,
+   'Content-Type': application/json,
+}
+2025-07-23T04:01:54,608+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T04:01:54,617+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T04:01:54,619+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/gsm/startGame, method=[POST], post={
+  "start": 1719820800,
+  "flow_id": "flow123",
+  "biz": 10,
+  "gid": 10,
+  "uuid": 10,
+  "vmid": 43,
+  "area_type": 4103,
+  "idc": "cn-east-jinhua-3001",
+  "stream_ip": "127.0.0.1",
+  "stream_ports": [
+    {
+      "name": "main",
+      "protocol_type": "tcp",
+      "stream_port": 50637
+    }
+  ],
+  "extra": "test extra info",
+  "image_version": 2,
+  "runtime_info": "{\"run_game_tag\":12345}"
+}, query={}, headers={authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU, accept=*/*, user-agent=Apifox/1.0.0 (https://apifox.com), x-forwarded-for=127.0.0.1, host=127.0.0.1:52001, accept-encoding=gzip, deflate, br, content-length=398, content-type=application/json}}
+2025-07-23T04:01:54,624+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T04:01:54,628+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/gsm/startGame] WITH incoming [/gsm/startGame]
+2025-07-23T04:01:54,633+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[POST]] WITH incoming [[POST]]
+2025-07-23T04:01:54,634+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 8 milliseconds Description [startGame]
+2025-07-23T04:01:54,644+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 04:01:54] <= 200 OK
+
+2025-07-23T04:26:19,277+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 04:26:19] => HTTP POST on [/gsm/startGame]
+2025-07-23T04:26:19,280+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T04:26:19,281+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
+   METHOD: POST
+   CONTEXT PATH: 
+   SERVLET PATH: 
+   AUTH TYPE: null
+   REMOTE USER: null
+   REQUEST URI: /gsm/startGame
+   REQUEST URL: http://127.0.0.1:52001/gsm/startGame
+   QUERY STRING: null
+   PATH INFO: /gsm/startGame
+   PATH TRANSLATED: null
+   HEADERS: {
+   'Authorization': Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU,
+   'Accept': */*,
+   'User-Agent': Apifox/1.0.0 (https://apifox.com),
+   'X-Forwarded-For': 127.0.0.1,
+   'Host': 127.0.0.1:52001,
+   'Accept-Encoding': gzip, deflate, br,
+   'Content-Length': 398,
+   'Content-Type': application/json,
+}
+2025-07-23T04:26:19,282+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T04:26:19,284+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T04:26:19,284+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/gsm/startGame, method=[POST], post={
+  "start": 1719820800,
+  "flow_id": "flow123",
+  "biz": 10,
+  "gid": 10,
+  "uuid": 10,
+  "vmid": 43,
+  "area_type": 4103,
+  "idc": "cn-east-jinhua-3001",
+  "stream_ip": "127.0.0.1",
+  "stream_ports": [
+    {
+      "name": "main",
+      "protocol_type": "tcp",
+      "stream_port": 50637
+    }
+  ],
+  "extra": "test extra info",
+  "image_version": 2,
+  "runtime_info": "{\"run_game_tag\":12345}"
+}, query={}, headers={authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU, accept=*/*, user-agent=Apifox/1.0.0 (https://apifox.com), x-forwarded-for=127.0.0.1, host=127.0.0.1:52001, accept-encoding=gzip, deflate, br, content-length=398, content-type=application/json}}
+2025-07-23T04:26:19,285+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T04:26:19,287+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/gsm/startGame] WITH incoming [/gsm/startGame]
+2025-07-23T04:26:19,292+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[POST]] WITH incoming [[POST]]
+2025-07-23T04:26:19,292+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 7 milliseconds Description [startGame]
+2025-07-23T04:26:19,299+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 04:26:19] <= 200 OK
+
+2025-07-23T04:29:31,551+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 04:29:31] => HTTP POST on [/gsm/startGame]
+2025-07-23T04:29:31,552+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T04:29:31,553+00:00 DEBUG i.g.a.s.u.ConsoleUtils    PROTOCOL: HTTP/1.1
+   METHOD: POST
+   CONTEXT PATH: 
+   SERVLET PATH: 
+   AUTH TYPE: null
+   REMOTE USER: null
+   REQUEST URI: /gsm/startGame
+   REQUEST URL: http://127.0.0.1:52001/gsm/startGame
+   QUERY STRING: null
+   PATH INFO: /gsm/startGame
+   PATH TRANSLATED: null
+   HEADERS: {
+   'Authorization': Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU,
+   'Accept': */*,
+   'User-Agent': Apifox/1.0.0 (https://apifox.com),
+   'X-Forwarded-For': 127.0.0.1,
+   'Host': 127.0.0.1:52001,
+   'Accept-Encoding': gzip, deflate, br,
+   'Content-Length': 398,
+   'Content-Type': application/json,
+}
+2025-07-23T04:29:31,553+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING RAW HTTP REQUEST DUMP] ***** 
+2025-07-23T04:29:31,559+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T04:29:31,560+00:00 DEBUG i.g.a.s.u.ConsoleUtils StubRequest{url=/gsm/startGame, method=[POST], post={
+  "start": 1719820800,
+  "flow_id": "flow123",
+  "biz": 10,
+  "gid": 10,
+  "uuid": 10,
+  "vmid": 43,
+  "area_type": 4103,
+  "idc": "cn-east-jinhua-3001",
+  "stream_ip": "127.0.0.1",
+  "stream_ports": [
+    {
+      "name": "main",
+      "protocol_type": "tcp",
+      "stream_port": 50637
+    }
+  ],
+  "extra": "test extra info",
+  "image_version": 2,
+  "runtime_info": "{\"run_game_tag\":12345}"
+}, query={}, headers={authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQ5NiwiaXNzIjoiY2dib3NzIiwiZXhwIjoxNzUzMjUzOTMwLCJuYmYiOjE3NTA2NjE5MzAsImlhdCI6MTc1MDY2MTkzMH0.HaRoNxEzMgX1rYy1Vr1CLRMMpEaudBSLnqJVYPcu4mU, accept=*/*, user-agent=Apifox/1.0.0 (https://apifox.com), x-forwarded-for=127.0.0.1, host=127.0.0.1:52001, accept-encoding=gzip, deflate, br, content-length=398, content-type=application/json}}
+2025-07-23T04:29:31,561+00:00 DEBUG i.g.a.s.u.ConsoleUtils  ***** [/DEBUG INCOMING ASSERTING HTTP REQUEST DUMP] ***** 
+2025-07-23T04:29:31,562+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed URL [/gsm/startGame] WITH incoming [/gsm/startGame]
+2025-07-23T04:29:31,563+00:00 INFO i.g.a.s.s.StubMatcher Matched on stubbed METHOD [[POST]] WITH incoming [[POST]]
+2025-07-23T04:29:31,563+00:00 DEBUG i.g.a.s.s.StubRepository Found a stubbed match after 2 milliseconds Description [startGame]
+2025-07-23T04:29:31,568+00:00 INFO i.g.a.s.u.ConsoleUtils [2025-07-23 04:29:31] <= 200 OK
+
+2025-07-23T07:07:41,146+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/startGame [startGame]
+2025-07-23T07:07:41,225+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/endGame [stopGame]
+2025-07-23T07:07:44,751+00:00 DEBUG i.g.a.s.f.MainYamlScanner Main YAML scan enabled, watching /home/stubby4j/data/stub.yaml.
+2025-07-23T07:07:44,781+00:00 DEBUG i.g.a.s.f.ExternalFilesScanner External file scan enabled, watching external files referenced from /home/stubby4j/data/stub.yaml.
+2025-07-23T07:07:44,919+00:00 DEBUG i.g.a.s.Main stubby4j successfully started after 8503 milliseconds.
+2025-07-23T07:07:44,920+00:00 DEBUG i.g.a.s.Main Admin portal:
+--------------------------------------------------------------------------------------------------------
+ > http://0.0.0.0:8889		Admin portal
+ > http://0.0.0.0:8889/status		Admin portal status
+
+
+Available insecure endpoints:
+--------------------------------------------------------------------------------------------------------
+ > http://0.0.0.0:51777		HTTP/1.1 stubs portal
+ > http://0.0.0.0:51777		HTTP/2 over TCP (h2c) stubs portal
+ > ws://0.0.0.0:51777/ws		HTTP/1.1 WebSockets stubs portal
+
+
+TLS layer configuration:
+--------------------------------------------------------------------------------------------------------
+ > Supported TLS protocol versions: [TLSv1.3, TLSv1.2] with ALPN extension on HTTP/2
+ > TLS layer configured using internal self-signed certificate
+
+
+Available secure endpoints:
+--------------------------------------------------------------------------------------------------------
+ > https://0.0.0.0:7443		HTTP/2 over TLS (h2) stubs portal
+
+2025-07-23T07:07:44,923+00:00 INFO i.g.a.s.Main Quit: ctrl-c
+2025-07-23T07:20:51,969+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/startGame [startGame]
+2025-07-23T07:20:52,079+00:00 INFO i.g.a.s.u.ConsoleUtils Loaded stub metadata: [POST] /gsm/endGame [stopGame]
+2025-07-23T07:20:55,906+00:00 DEBUG i.g.a.s.f.MainYamlScanner Main YAML scan enabled, watching /home/stubby4j/data/stub.yaml.
+2025-07-23T07:20:55,938+00:00 DEBUG i.g.a.s.f.ExternalFilesScanner External file scan enabled, watching external files referenced from /home/stubby4j/data/stub.yaml.
+2025-07-23T07:20:56,103+00:00 DEBUG i.g.a.s.Main stubby4j successfully started after 8919 milliseconds.
+2025-07-23T07:20:56,105+00:00 DEBUG i.g.a.s.Main Admin portal:
+--------------------------------------------------------------------------------------------------------
+ > http://0.0.0.0:8889		Admin portal
+ > http://0.0.0.0:8889/status		Admin portal status
+
+
+Available insecure endpoints:
+--------------------------------------------------------------------------------------------------------
+ > http://0.0.0.0:51777		HTTP/1.1 stubs portal
+ > http://0.0.0.0:51777		HTTP/2 over TCP (h2c) stubs portal
+ > ws://0.0.0.0:51777/ws		HTTP/1.1 WebSockets stubs portal
+
+
+TLS layer configuration:
+--------------------------------------------------------------------------------------------------------
+ > Supported TLS protocol versions: [TLSv1.3, TLSv1.2] with ALPN extension on HTTP/2
+ > TLS layer configured using internal self-signed certificate
+
+
+Available secure endpoints:
+--------------------------------------------------------------------------------------------------------
+ > https://0.0.0.0:7443		HTTP/2 over TLS (h2) stubs portal
+
+2025-07-23T07:20:56,111+00:00 INFO i.g.a.s.Main Quit: ctrl-c
